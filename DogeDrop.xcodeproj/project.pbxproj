@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05BF17152B026B75003E72D4 /* DogeDropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17142B026B75003E72D4 /* DogeDropApp.swift */; };
-		05BF17172B026B75003E72D4 /* DogeDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17162B026B75003E72D4 /* DogeDropView.swift */; };
 		05BF17192B026B77003E72D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF17182B026B77003E72D4 /* Assets.xcassets */; };
 		05BF171C2B026B77003E72D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF171B2B026B77003E72D4 /* Preview Assets.xcassets */; };
 		05BF17262B026B78003E72D4 /* DogeDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17252B026B78003E72D4 /* DogeDropTests.swift */; };
 		05BF17302B026B78003E72D4 /* DogeDropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF172F2B026B78003E72D4 /* DogeDropUITests.swift */; };
 		05BF17322B026B78003E72D4 /* DogeDropUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17312B026B78003E72D4 /* DogeDropUITestsLaunchTests.swift */; };
+		05BF17422B027463003E72D4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17412B027463003E72D4 /* GameScene.swift */; };
+		05BF17472B0274DC003E72D4 /* DogeDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17462B0274DB003E72D4 /* DogeDropView.swift */; };
+		05BF17492B02757E003E72D4 /* DogeDropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17482B02757E003E72D4 /* DogeDropApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,6 @@
 
 /* Begin PBXFileReference section */
 		05BF17112B026B75003E72D4 /* DogeDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogeDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		05BF17142B026B75003E72D4 /* DogeDropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeDropApp.swift; sourceTree = "<group>"; };
-		05BF17162B026B75003E72D4 /* DogeDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeDropView.swift; sourceTree = "<group>"; };
 		05BF17182B026B77003E72D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05BF171B2B026B77003E72D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		05BF17212B026B78003E72D4 /* DogeDropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogeDropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,9 @@
 		05BF172B2B026B78003E72D4 /* DogeDropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogeDropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BF172F2B026B78003E72D4 /* DogeDropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeDropUITests.swift; sourceTree = "<group>"; };
 		05BF17312B026B78003E72D4 /* DogeDropUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeDropUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		05BF17412B027463003E72D4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		05BF17462B0274DB003E72D4 /* DogeDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeDropView.swift; sourceTree = "<group>"; };
+		05BF17482B02757E003E72D4 /* DogeDropApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogeDropApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		05BF17132B026B75003E72D4 /* DogeDrop */ = {
 			isa = PBXGroup;
 			children = (
+				05BF17462B0274DB003E72D4 /* DogeDropView.swift */,
+				05BF17402B027438003E72D4 /* Scenes */,
 				05BF173E2B026C07003E72D4 /* Resources */,
-				05BF173F2B026C44003E72D4 /* ViewController */,
 				05BF171A2B026B77003E72D4 /* Preview Content */,
 			);
 			path = DogeDrop;
@@ -129,18 +132,18 @@
 		05BF173E2B026C07003E72D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				05BF17142B026B75003E72D4 /* DogeDropApp.swift */,
+				05BF17482B02757E003E72D4 /* DogeDropApp.swift */,
 				05BF17182B026B77003E72D4 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		05BF173F2B026C44003E72D4 /* ViewController */ = {
+		05BF17402B027438003E72D4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				05BF17162B026B75003E72D4 /* DogeDropView.swift */,
+				05BF17412B027463003E72D4 /* GameScene.swift */,
 			);
-			path = ViewController;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05BF17172B026B75003E72D4 /* DogeDropView.swift in Sources */,
-				05BF17152B026B75003E72D4 /* DogeDropApp.swift in Sources */,
+				05BF17472B0274DC003E72D4 /* DogeDropView.swift in Sources */,
+				05BF17492B02757E003E72D4 /* DogeDropApp.swift in Sources */,
+				05BF17422B027463003E72D4 /* GameScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
