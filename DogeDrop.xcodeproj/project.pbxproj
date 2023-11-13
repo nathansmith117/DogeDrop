@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05BF17152B026B75003E72D4 /* DogeDropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17142B026B75003E72D4 /* DogeDropApp.swift */; };
-		05BF17172B026B75003E72D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17162B026B75003E72D4 /* ContentView.swift */; };
+		05BF17172B026B75003E72D4 /* DogeDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17162B026B75003E72D4 /* DogeDropView.swift */; };
 		05BF17192B026B77003E72D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF17182B026B77003E72D4 /* Assets.xcassets */; };
 		05BF171C2B026B77003E72D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF171B2B026B77003E72D4 /* Preview Assets.xcassets */; };
 		05BF17262B026B78003E72D4 /* DogeDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17252B026B78003E72D4 /* DogeDropTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		05BF17112B026B75003E72D4 /* DogeDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogeDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BF17142B026B75003E72D4 /* DogeDropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeDropApp.swift; sourceTree = "<group>"; };
-		05BF17162B026B75003E72D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		05BF17162B026B75003E72D4 /* DogeDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeDropView.swift; sourceTree = "<group>"; };
 		05BF17182B026B77003E72D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05BF171B2B026B77003E72D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		05BF17212B026B78003E72D4 /* DogeDropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogeDropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,9 +94,8 @@
 		05BF17132B026B75003E72D4 /* DogeDrop */ = {
 			isa = PBXGroup;
 			children = (
-				05BF17142B026B75003E72D4 /* DogeDropApp.swift */,
-				05BF17162B026B75003E72D4 /* ContentView.swift */,
-				05BF17182B026B77003E72D4 /* Assets.xcassets */,
+				05BF173E2B026C07003E72D4 /* Resources */,
+				05BF173F2B026C44003E72D4 /* ViewController */,
 				05BF171A2B026B77003E72D4 /* Preview Content */,
 			);
 			path = DogeDrop;
@@ -125,6 +124,23 @@
 				05BF17312B026B78003E72D4 /* DogeDropUITestsLaunchTests.swift */,
 			);
 			path = DogeDropUITests;
+			sourceTree = "<group>";
+		};
+		05BF173E2B026C07003E72D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				05BF17142B026B75003E72D4 /* DogeDropApp.swift */,
+				05BF17182B026B77003E72D4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		05BF173F2B026C44003E72D4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05BF17162B026B75003E72D4 /* DogeDropView.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05BF17172B026B75003E72D4 /* ContentView.swift in Sources */,
+				05BF17172B026B75003E72D4 /* DogeDropView.swift in Sources */,
 				05BF17152B026B75003E72D4 /* DogeDropApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

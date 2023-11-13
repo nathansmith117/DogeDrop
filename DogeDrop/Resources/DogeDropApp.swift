@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct DogeDropApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct DogeDropApp: App
+{
+    var body: some Scene
+    {
+        WindowGroup
+        {
+            DogeDropView()
         }
     }
 }
