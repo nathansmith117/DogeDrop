@@ -1,0 +1,55 @@
+name: CTEC iOS Dev Workflow
+on: [push]
+
+env:
+  LANG: "en_US.UTF-8"
+  LANGUAGE: "en_US:en"
+  LC_ALL: "en_US.UTF-8"
+  USER: ${{ github.actor }}
+  HUMAN: "Your first and last name"
+  PROJECT_DIR: "" #The name of your repo AKA project folder No Spaces
+  ASSIGNMENT: "SystemsAndImpact"  #"NameOfTheAssignmentOnCanvasNoSpaces"
+
+jobs:
+  ios_build_test:
+    name: Test-iOS
+    runs-on: self-hosted
+  
+    steps:
+     - name: Checkout Code
+       uses: actions/checkout@v3
+       
+     - name: start documentation
+       run: |
+            echo -e "\n"$HUMAN $PROJECT_DIR"\nBuild results\n"| tee -a ~/Documents/${ASSIGNMENT}_testing_log.txt
+
+     - name: build project
+       run: |
+            xcrun xcodebuild build-for-testing \
+            -quiet \
+            -project "${USER}/${PROJECT_DIR}.xcodeproj" \
+            -scheme "$PROJECT_DIR" \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 11' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO \
+            clean 2>&1 | sed -e '/Requested/,/\^/d' | xcbeautify --disable-colored-output --quiet | tee -a  ~/Documents/${ASSIGNMENT}_testing_log.txt
+    
+     - name: Append documentation
+       run: |
+            echo -e "Test results\n"| tee -a ~/Documents/${ASSIGNMENT}_testing_log.txt
+
+     - name: test Code
+       run: |
+            xcrun xcodebuild test-without-building \
+            -project "${USER}/${PROJECT_DIR}.xcodeproj/project" \
+            -scheme "$PROJECT_DIR" \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 11' \
+            clean \
+            test \
+            -only-testing:${PROJECT_DIR}Tests/TestsForCTEC \
+            -only-testing:${PROJECT_DIR}UITests/UITestsForCTEC \
+            2>&1 | sed -e '/warning:/,/\^/d' | xcbeautify --disable-colored-output --quiet | \
+            tee -a ~/Documents/${ASSIGNMENT}_testing_log.txt
+  #installed xcbeautify
+  #- name: update README
+  #run: ~/Documents/Dev/Testing/updateREADME.sh

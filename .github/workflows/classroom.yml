@@ -1,0 +1,37 @@
+name: Swift Badge Workflow
+on: [push]
+
+jobs:
+    build:
+        name: Grading
+        runs-on: self-hosted
+        timeout-minutes: 5
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                fetch-depth: 0 # Handles depth push
+            
+            # Add ID to action so output is visible
+            - uses: education/autograding@v1
+              id: autograder
+              continue-on-error: true
+            
+            # Switch to badges branch
+            - run: git checkout badges || git checkout -b badges
+            
+            # Create points bar from MarkPatterson27
+            - name: points bar
+              uses: markpatterson27/points-bar@v1
+              with:
+                points: ${{ steps.autograder.outputs.points }}
+                path: '.github/badges/points-bar.svg'
+                
+            # commit and push badges if badges have changed
+            - name: Commit changes to points bar
+              run: |
+                 git config --local user.email "action@github.com"
+                 git config --local user.name "GitHub Action"
+                 git add '.github/badges/points-bar.svg'
+                 git commit -m "Add/Update points bar" || exit 0
+                 git push origin badges
+
