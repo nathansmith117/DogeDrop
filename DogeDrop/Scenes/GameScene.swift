@@ -19,7 +19,7 @@ class GameScene : SKScene
         guard let touch = touches.first
         else { return }
         
-        let currentColor = UIColor.magenta
+        let currentColor = assignColorAndBitmask()
         let width = Int(arc4random() % 50)
         let height = Int(arc4random() % 50)
         let location = touch.location(in: self)
