@@ -7,11 +7,14 @@
 
 import SpriteKit
 
-class GameScene : SKScene
+class GameScene : SKScene, SKPhysicsContactDelegate
 {
+    private var colorMask : Int = 0b0000
+    
     override func didMove(to view : SKView) -> Void
     {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
+        physicsWorld.contactDelegate = self
     }
     
     override func touchesBegan(_ touches : Set<UITouch>, with event : UIEvent?) -> Void
@@ -26,8 +29,10 @@ class GameScene : SKScene
         
         let node : SKSpriteNode
         node = SKSpriteNode(color: currentColor, size: CGSize(width: width, height: height))
+        
         node.position = location
         node.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: width, height: height))
+        node.physicsBody?.contactTestBitMask = UInt32(colorMask)
         
         addChild(node)
     }
@@ -37,6 +42,32 @@ class GameScene : SKScene
         let colors : [UIColor] = [.black, .red, .magenta, .blue, .green, .darkGray, .cyan, .brown, .yellow]
         let randomIndex = Int(arc4random()) % colors.count
         
+        colorMask = randomIndex + 1
+        
         return colors[randomIndex]
+    }
+    
+    //MARK: Collisin Sequence
+    
+    func didBegin(_ contact: SKPhysicsContact) -> Void
+    {
+        guard let first = contact.bodyA.node else { return }
+        guard let second = contact.bodyB.node else { return }
+        
+        collisionBetween(first, and: second)
+    }
+    
+    private func collisionBetween(_ nodeOne : SKNode, and nodeTwo : SKNode) -> Void
+    {
+        if (nodeOne.physicsBody?.contactTestBitMask == nodeTwo.physicsBody?.contactTestBitMask)
+        {
+            annihilate(deadNode: nodeOne)
+            annihilate(deadNode: nodeTwo)
+        }
+    }
+    
+    private func annihilate(deadNode : SKNode) -> Void
+    {
+        deadNode.removeFromParent()
     }
 }
