@@ -31,4 +31,12 @@ class GameScene : SKScene
         
         addChild(node)
     }
+    
+    private func assignColorAndBitmask() -> UIColor
+    {
+        let colors : [UIColor] = [.black, .red, .magenta, .blue, .green, .darkGray, .cyan, .brown, .yellow]
+        let randomIndex = Int(arc4random()) % colors.count
+        
+        return colors[randomIndex]
+    }
 }
