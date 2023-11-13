@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05BF17152B026B75003E72D4 /* DogeDropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17142B026B75003E72D4 /* DogeDropApp.swift */; };
+		05BF17172B026B75003E72D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17162B026B75003E72D4 /* ContentView.swift */; };
+		05BF17192B026B77003E72D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF17182B026B77003E72D4 /* Assets.xcassets */; };
+		05BF171C2B026B77003E72D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF171B2B026B77003E72D4 /* Preview Assets.xcassets */; };
+		05BF17262B026B78003E72D4 /* DogeDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17252B026B78003E72D4 /* DogeDropTests.swift */; };
+		05BF17302B026B78003E72D4 /* DogeDropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF172F2B026B78003E72D4 /* DogeDropUITests.swift */; };
+		05BF17322B026B78003E72D4 /* DogeDropUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17312B026B78003E72D4 /* DogeDropUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05BF17222B026B78003E72D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05BF17092B026B75003E72D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05BF17102B026B75003E72D4;
+			remoteInfo = DogeDrop;
+		};
+		05BF172C2B026B78003E72D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05BF17092B026B75003E72D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05BF17102B026B75003E72D4;
+			remoteInfo = DogeDrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05BF17112B026B75003E72D4 /* DogeDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogeDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BF17142B026B75003E72D4 /* DogeDropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeDropApp.swift; sourceTree = "<group>"; };
+		05BF17162B026B75003E72D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		05BF17182B026B77003E72D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05BF171B2B026B77003E72D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05BF17212B026B78003E72D4 /* DogeDropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogeDropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BF17252B026B78003E72D4 /* DogeDropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeDropTests.swift; sourceTree = "<group>"; };
+		05BF172B2B026B78003E72D4 /* DogeDropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogeDropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BF172F2B026B78003E72D4 /* DogeDropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeDropUITests.swift; sourceTree = "<group>"; };
+		05BF17312B026B78003E72D4 /* DogeDropUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeDropUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05BF170E2B026B75003E72D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BF171E2B026B78003E72D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BF17282B026B78003E72D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05BF17082B026B75003E72D4 = {
+			isa = PBXGroup;
+			children = (
+				05BF17132B026B75003E72D4 /* DogeDrop */,
+				05BF17242B026B78003E72D4 /* DogeDropTests */,
+				05BF172E2B026B78003E72D4 /* DogeDropUITests */,
+				05BF17122B026B75003E72D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05BF17122B026B75003E72D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05BF17112B026B75003E72D4 /* DogeDrop.app */,
+				05BF17212B026B78003E72D4 /* DogeDropTests.xctest */,
+				05BF172B2B026B78003E72D4 /* DogeDropUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05BF17132B026B75003E72D4 /* DogeDrop */ = {
+			isa = PBXGroup;
+			children = (
+				05BF17142B026B75003E72D4 /* DogeDropApp.swift */,
+				05BF17162B026B75003E72D4 /* ContentView.swift */,
+				05BF17182B026B77003E72D4 /* Assets.xcassets */,
+				05BF171A2B026B77003E72D4 /* Preview Content */,
+			);
+			path = DogeDrop;
+			sourceTree = "<group>";
+		};
+		05BF171A2B026B77003E72D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				05BF171B2B026B77003E72D4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		05BF17242B026B78003E72D4 /* DogeDropTests */ = {
+			isa = PBXGroup;
+			children = (
+				05BF17252B026B78003E72D4 /* DogeDropTests.swift */,
+			);
+			path = DogeDropTests;
+			sourceTree = "<group>";
+		};
+		05BF172E2B026B78003E72D4 /* DogeDropUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05BF172F2B026B78003E72D4 /* DogeDropUITests.swift */,
+				05BF17312B026B78003E72D4 /* DogeDropUITestsLaunchTests.swift */,
+			);
+			path = DogeDropUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05BF17102B026B75003E72D4 /* DogeDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BF17352B026B78003E72D4 /* Build configuration list for PBXNativeTarget "DogeDrop" */;
+			buildPhases = (
+				05BF170D2B026B75003E72D4 /* Sources */,
+				05BF170E2B026B75003E72D4 /* Frameworks */,
+				05BF170F2B026B75003E72D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogeDrop;
+			productName = DogeDrop;
+			productReference = 05BF17112B026B75003E72D4 /* DogeDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05BF17202B026B78003E72D4 /* DogeDropTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BF17382B026B78003E72D4 /* Build configuration list for PBXNativeTarget "DogeDropTests" */;
+			buildPhases = (
+				05BF171D2B026B78003E72D4 /* Sources */,
+				05BF171E2B026B78003E72D4 /* Frameworks */,
+				05BF171F2B026B78003E72D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05BF17232B026B78003E72D4 /* PBXTargetDependency */,
+			);
+			name = DogeDropTests;
+			productName = DogeDropTests;
+			productReference = 05BF17212B026B78003E72D4 /* DogeDropTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05BF172A2B026B78003E72D4 /* DogeDropUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BF173B2B026B78003E72D4 /* Build configuration list for PBXNativeTarget "DogeDropUITests" */;
+			buildPhases = (
+				05BF17272B026B78003E72D4 /* Sources */,
+				05BF17282B026B78003E72D4 /* Frameworks */,
+				05BF17292B026B78003E72D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05BF172D2B026B78003E72D4 /* PBXTargetDependency */,
+			);
+			name = DogeDropUITests;
+			productName = DogeDropUITests;
+			productReference = 05BF172B2B026B78003E72D4 /* DogeDropUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05BF17092B026B75003E72D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					05BF17102B026B75003E72D4 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					05BF17202B026B78003E72D4 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 05BF17102B026B75003E72D4;
+					};
+					05BF172A2B026B78003E72D4 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 05BF17102B026B75003E72D4;
+					};
+				};
+			};
+			buildConfigurationList = 05BF170C2B026B75003E72D4 /* Build configuration list for PBXProject "DogeDrop" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05BF17082B026B75003E72D4;
+			productRefGroup = 05BF17122B026B75003E72D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05BF17102B026B75003E72D4 /* DogeDrop */,
+				05BF17202B026B78003E72D4 /* DogeDropTests */,
+				05BF172A2B026B78003E72D4 /* DogeDropUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05BF170F2B026B75003E72D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BF171C2B026B77003E72D4 /* Preview Assets.xcassets in Resources */,
+				05BF17192B026B77003E72D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BF171F2B026B78003E72D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BF17292B026B78003E72D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05BF170D2B026B75003E72D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BF17172B026B75003E72D4 /* ContentView.swift in Sources */,
+				05BF17152B026B75003E72D4 /* DogeDropApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BF171D2B026B78003E72D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BF17262B026B78003E72D4 /* DogeDropTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BF17272B026B78003E72D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BF17322B026B78003E72D4 /* DogeDropUITestsLaunchTests.swift in Sources */,
+				05BF17302B026B78003E72D4 /* DogeDropUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05BF17232B026B78003E72D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05BF17102B026B75003E72D4 /* DogeDrop */;
+			targetProxy = 05BF17222B026B78003E72D4 /* PBXContainerItemProxy */;
+		};
+		05BF172D2B026B78003E72D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05BF17102B026B75003E72D4 /* DogeDrop */;
+			targetProxy = 05BF172C2B026B78003E72D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05BF17332B026B78003E72D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05BF17342B026B78003E72D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05BF17362B026B78003E72D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DogeDrop/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathan.CTEC.DogeDrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05BF17372B026B78003E72D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DogeDrop/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathan.CTEC.DogeDrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05BF17392B026B78003E72D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathan.CTEC.DogeDropTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogeDrop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DogeDrop";
+			};
+			name = Debug;
+		};
+		05BF173A2B026B78003E72D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathan.CTEC.DogeDropTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogeDrop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DogeDrop";
+			};
+			name = Release;
+		};
+		05BF173C2B026B78003E72D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathan.CTEC.DogeDropUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DogeDrop;
+			};
+			name = Debug;
+		};
+		05BF173D2B026B78003E72D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathan.CTEC.DogeDropUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DogeDrop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05BF170C2B026B75003E72D4 /* Build configuration list for PBXProject "DogeDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BF17332B026B78003E72D4 /* Debug */,
+				05BF17342B026B78003E72D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05BF17352B026B78003E72D4 /* Build configuration list for PBXNativeTarget "DogeDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BF17362B026B78003E72D4 /* Debug */,
+				05BF17372B026B78003E72D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05BF17382B026B78003E72D4 /* Build configuration list for PBXNativeTarget "DogeDropTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BF17392B026B78003E72D4 /* Debug */,
+				05BF173A2B026B78003E72D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05BF173B2B026B78003E72D4 /* Build configuration list for PBXNativeTarget "DogeDropUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BF173C2B026B78003E72D4 /* Debug */,
+				05BF173D2B026B78003E72D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05BF17092B026B75003E72D4 /* Project object */;
+}
