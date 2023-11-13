@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Demo Test",
+      "setup": "",
+      "run": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 4,
+      "points": 10
+    }
+  ]
+}
