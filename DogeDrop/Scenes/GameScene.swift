@@ -88,4 +88,21 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         score += 5
         deadNode.removeFromParent()
     }
+    
+    //MARK: - Kaboom?
+    
+    private func explosionEffect(at location : CGPoint) -> Void
+    {
+        if let explosion = SKEmitterNode(fileNamed: "SparkParticle")
+        {
+            explosion.position = location
+            addChild(explosion)
+            
+            let waitTime = SKAction.wait(forDuration: 5)
+            let removeExplosion = SKAction.removeFromParent()
+            let explosiveSequence = SKAction.sequence([waitTime, removeExplosion])
+            
+            explosion.run(explosiveSequence)
+        }
+    }
 }
