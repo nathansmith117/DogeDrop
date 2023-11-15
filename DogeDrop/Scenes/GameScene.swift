@@ -33,7 +33,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         addChild(scoreNode)
         score = 0
         
-        // Load background music
+        //MARK: Load background music
         let backgroundMusic = SKAudioNode(fileNamed: "TheBlindNavigator")
         backgroundMusic.name = "music"
         addChild(backgroundMusic)
@@ -107,6 +107,9 @@ class GameScene : SKScene, SKPhysicsContactDelegate
             let waitTime = SKAction.wait(forDuration: 5)
             let removeExplosion = SKAction.removeFromParent()
             let explosiveSequence = SKAction.sequence([waitTime, removeExplosion])
+            
+            let effectSound = SKAction.playSoundFileNamed("drop bass", waitForCompletion: false)
+            run(effectSound)
             
             explosion.run(explosiveSequence)
         }

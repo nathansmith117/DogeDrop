@@ -93,10 +93,26 @@
 		056506822B051ACF009D3C83 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				056506852B051AF8009D3C83 /* drop bass.wav */,
-				056506832B051AE4009D3C83 /* TheBlindNavigator.mp3 */,
+				056506872B051D7E009D3C83 /* Small */,
+				056506882B051D86009D3C83 /* Long */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		056506872B051D7E009D3C83 /* Small */ = {
+			isa = PBXGroup;
+			children = (
+				056506852B051AF8009D3C83 /* drop bass.wav */,
+			);
+			path = Small;
+			sourceTree = "<group>";
+		};
+		056506882B051D86009D3C83 /* Long */ = {
+			isa = PBXGroup;
+			children = (
+				056506832B051AE4009D3C83 /* TheBlindNavigator.mp3 */,
+			);
+			path = Long;
 			sourceTree = "<group>";
 		};
 		05BF17082B026B75003E72D4 = {
