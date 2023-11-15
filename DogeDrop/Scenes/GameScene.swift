@@ -32,6 +32,11 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         scoreNode.fontSize = 20
         addChild(scoreNode)
         score = 0
+        
+        // Load background music
+        let backgroundMusic = SKAudioNode(fileNamed: "TheBlindNavigator")
+        backgroundMusic.name = "music"
+        addChild(backgroundMusic)
     }
     
     override func touchesBegan(_ touches : Set<UITouch>, with event : UIEvent?) -> Void

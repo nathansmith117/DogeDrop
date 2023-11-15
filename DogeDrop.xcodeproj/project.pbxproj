@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		056506802B051172009D3C83 /* SparkParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0565067E2B051172009D3C83 /* SparkParticle.sks */; };
 		056506812B051172009D3C83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0565067F2B051172009D3C83 /* Assets.xcassets */; };
+		056506842B051AE4009D3C83 /* TheBlindNavigator.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 056506832B051AE4009D3C83 /* TheBlindNavigator.mp3 */; };
+		056506862B051AF8009D3C83 /* drop bass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 056506852B051AF8009D3C83 /* drop bass.wav */; };
 		05BF17192B026B77003E72D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF17182B026B77003E72D4 /* Assets.xcassets */; };
 		05BF171C2B026B77003E72D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF171B2B026B77003E72D4 /* Preview Assets.xcassets */; };
 		05BF17262B026B78003E72D4 /* DogeDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17252B026B78003E72D4 /* DogeDropTests.swift */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		0565067E2B051172009D3C83 /* SparkParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkParticle.sks; sourceTree = "<group>"; };
 		0565067F2B051172009D3C83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		056506832B051AE4009D3C83 /* TheBlindNavigator.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TheBlindNavigator.mp3; sourceTree = "<group>"; };
+		056506852B051AF8009D3C83 /* drop bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drop bass.wav"; sourceTree = "<group>"; };
 		05BF17112B026B75003E72D4 /* DogeDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogeDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BF17182B026B77003E72D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05BF171B2B026B77003E72D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -84,6 +88,15 @@
 				0565067F2B051172009D3C83 /* Assets.xcassets */,
 			);
 			path = Particles;
+			sourceTree = "<group>";
+		};
+		056506822B051ACF009D3C83 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				056506852B051AF8009D3C83 /* drop bass.wav */,
+				056506832B051AE4009D3C83 /* TheBlindNavigator.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		05BF17082B026B75003E72D4 = {
@@ -146,6 +159,7 @@
 		05BF173E2B026C07003E72D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				056506822B051ACF009D3C83 /* Sounds */,
 				05BF17482B02757E003E72D4 /* DogeDropApp.swift */,
 				05BF17182B026B77003E72D4 /* Assets.xcassets */,
 			);
@@ -266,8 +280,10 @@
 			files = (
 				05BF171C2B026B77003E72D4 /* Preview Assets.xcassets in Resources */,
 				056506802B051172009D3C83 /* SparkParticle.sks in Resources */,
+				056506842B051AE4009D3C83 /* TheBlindNavigator.mp3 in Resources */,
 				056506812B051172009D3C83 /* Assets.xcassets in Resources */,
 				05BF17192B026B77003E72D4 /* Assets.xcassets in Resources */,
+				056506862B051AF8009D3C83 /* drop bass.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
