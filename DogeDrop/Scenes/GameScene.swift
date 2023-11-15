@@ -20,6 +20,12 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         }
     }
     
+    //MARK: - END THE GAME
+    private func endGame() -> Void
+    {
+        
+    }
+    
     override func didMove(to view : SKView) -> Void
     {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
@@ -44,19 +50,26 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         guard let touch = touches.first
         else { return }
         
-        let currentColor = assignColorAndBitmask()
-        let width = Int(arc4random() % 50)
-        let height = Int(arc4random() % 50)
-        let location = touch.location(in: self)
-        
-        let node : SKSpriteNode
-        node = SKSpriteNode(color: currentColor, size: CGSize(width: width, height: height))
-        
-        node.position = location
-        node.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: width, height: height))
-        node.physicsBody?.contactTestBitMask = UInt32(colorMask)
-        
-        addChild(node)
+        if (score >= 100)
+        {
+            endGame()
+        }
+        else
+        {
+            let currentColor = assignColorAndBitmask()
+            let width = Int(arc4random() % 50)
+            let height = Int(arc4random() % 50)
+            let location = touch.location(in: self)
+            
+            let node : SKSpriteNode
+            node = SKSpriteNode(color: currentColor, size: CGSize(width: width, height: height))
+            
+            node.position = location
+            node.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: width, height: height))
+            node.physicsBody?.contactTestBitMask = UInt32(colorMask)
+            
+            addChild(node)
+        }
     }
     
     private func assignColorAndBitmask() -> UIColor
@@ -91,7 +104,8 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     private func annihilate(deadNode : SKNode) -> Void
     {
         score += 5
-        explosionEffect(at: deadNode.position)
+        //explosionEffect(at: deadNode.position)
+        updateSound()
         deadNode.removeFromParent()
     }
     
@@ -109,9 +123,18 @@ class GameScene : SKScene, SKPhysicsContactDelegate
             let explosiveSequence = SKAction.sequence([waitTime, removeExplosion])
             
             let effectSound = SKAction.playSoundFileNamed("drop bass", waitForCompletion: false)
-            run(effectSound)
             
             explosion.run(explosiveSequence)
+        }
+    }
+    
+    //MARK: - Sound effect
+    private func updateSound() -> Void
+    {
+        if let sound = childNode(withName: "music")
+        {
+            let speedUp = SKAction.changePlaybackRate(by: 1.5, duration: 3)
+            sound.run(speedUp)
         }
     }
 }

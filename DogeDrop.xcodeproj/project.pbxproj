@@ -11,6 +11,7 @@
 		056506812B051172009D3C83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0565067F2B051172009D3C83 /* Assets.xcassets */; };
 		056506842B051AE4009D3C83 /* TheBlindNavigator.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 056506832B051AE4009D3C83 /* TheBlindNavigator.mp3 */; };
 		056506862B051AF8009D3C83 /* drop bass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 056506852B051AF8009D3C83 /* drop bass.wav */; };
+		0565068A2B052105009D3C83 /* EndGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056506892B052105009D3C83 /* EndGameScene.swift */; };
 		05BF17192B026B77003E72D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF17182B026B77003E72D4 /* Assets.xcassets */; };
 		05BF171C2B026B77003E72D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF171B2B026B77003E72D4 /* Preview Assets.xcassets */; };
 		05BF17262B026B78003E72D4 /* DogeDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BF17252B026B78003E72D4 /* DogeDropTests.swift */; };
@@ -43,6 +44,7 @@
 		0565067F2B051172009D3C83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		056506832B051AE4009D3C83 /* TheBlindNavigator.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TheBlindNavigator.mp3; sourceTree = "<group>"; };
 		056506852B051AF8009D3C83 /* drop bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drop bass.wav"; sourceTree = "<group>"; };
+		056506892B052105009D3C83 /* EndGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameScene.swift; sourceTree = "<group>"; };
 		05BF17112B026B75003E72D4 /* DogeDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogeDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BF17182B026B77003E72D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05BF171B2B026B77003E72D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				05BF17412B027463003E72D4 /* GameScene.swift */,
+				056506892B052105009D3C83 /* EndGameScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0565068A2B052105009D3C83 /* EndGameScene.swift in Sources */,
 				05BF17472B0274DC003E72D4 /* DogeDropView.swift in Sources */,
 				05BF17492B02757E003E72D4 /* DogeDropApp.swift in Sources */,
 				05BF17422B027463003E72D4 /* GameScene.swift in Sources */,
