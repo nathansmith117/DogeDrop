@@ -123,6 +123,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate
             let explosiveSequence = SKAction.sequence([waitTime, removeExplosion])
             
             let effectSound = SKAction.playSoundFileNamed("drop bass", waitForCompletion: false)
+            //run(effectSound)
             
             explosion.run(explosiveSequence)
         }
