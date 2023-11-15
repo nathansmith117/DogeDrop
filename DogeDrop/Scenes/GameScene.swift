@@ -23,7 +23,12 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     //MARK: - END THE GAME
     private func endGame() -> Void
     {
-        
+        let transition = SKTransition.fade(with: .green, duration: 5)
+        let endScene = EndGameScene()
+        endScene.score = score
+        endScene.size = CGSize(width: 300, height: 500)
+        endScene.scaleMode = .fill
+        self.view?.presentScene(endScene, transition: transition)
     }
     
     override func didMove(to view : SKView) -> Void
