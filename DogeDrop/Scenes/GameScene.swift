@@ -109,7 +109,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     private func annihilate(deadNode : SKNode) -> Void
     {
         score += 5
-        //explosionEffect(at: deadNode.position)
+        explosionEffect(at: deadNode.position)
         updateSound()
         deadNode.removeFromParent()
     }
@@ -125,7 +125,9 @@ class GameScene : SKScene, SKPhysicsContactDelegate
             
             let waitTime = SKAction.wait(forDuration: 5)
             let removeExplosion = SKAction.removeFromParent()
-            let explosiveSequence = SKAction.sequence([waitTime, removeExplosion])
+            let reverbChange = SKAction.changeReverb(to: 1.0, duration: 2.0)
+            let speedChange = SKAction.changePlaybackRate(to: 1.2, duration: 2.0)
+            let explosiveSequence = SKAction.sequence([speedChange, reverbChange, waitTime, removeExplosion])
             
             let effectSound = SKAction.playSoundFileNamed("drop bass", waitForCompletion: false)
             run(effectSound)
@@ -140,6 +142,8 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         if let sound = childNode(withName: "music")
         {
             let speedUp = SKAction.changePlaybackRate(by: 1.5, duration: 0.01)
+            let reverbChange = SKAction.changeReverb(to: 1.0, duration: 5.0)
+            sound.run(reverbChange)
             sound.run(speedUp)
         }
     }
