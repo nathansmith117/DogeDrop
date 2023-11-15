@@ -139,7 +139,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     {
         if let sound = childNode(withName: "music")
         {
-            let speedUp = SKAction.changePlaybackRate(by: 1.5, duration: 3)
+            let speedUp = SKAction.changePlaybackRate(by: 1.5, duration: 0.01)
             sound.run(speedUp)
         }
     }
