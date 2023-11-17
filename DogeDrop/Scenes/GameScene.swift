@@ -125,9 +125,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate
             
             let waitTime = SKAction.wait(forDuration: 5)
             let removeExplosion = SKAction.removeFromParent()
-            let reverbChange = SKAction.changeReverb(to: 1.0, duration: 2.0)
-            let speedChange = SKAction.changePlaybackRate(to: 1.2, duration: 2.0)
-            let explosiveSequence = SKAction.sequence([speedChange, reverbChange, waitTime, removeExplosion])
+            let explosiveSequence = SKAction.sequence([waitTime, removeExplosion])
             
             let effectSound = SKAction.playSoundFileNamed("drop bass", waitForCompletion: false)
             run(effectSound)
