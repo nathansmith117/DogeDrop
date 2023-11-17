@@ -73,6 +73,8 @@ class GameScene : SKScene, SKPhysicsContactDelegate
             node.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: width, height: height))
             node.physicsBody?.contactTestBitMask = UInt32(colorMask)
             
+            node.texture = SKTexture(imageNamed: "doge_cute")
+            
             addChild(node)
         }
     }
