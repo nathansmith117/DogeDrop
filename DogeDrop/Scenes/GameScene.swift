@@ -84,7 +84,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     
     private func getRandomDogeTextureName() -> String
     {
-        let textures : [String] = ["doge_big", "doge_classic", "doge_coin", "doge_cute"]
+        let textures : [String] = ["doge_big", "doge_classic", "doge_coin", "doge_cute", "doge_bread"]
         let texture = textures[Int(arc4random()) % textures.count]
         
         return texture
