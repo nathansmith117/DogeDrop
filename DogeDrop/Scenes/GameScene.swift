@@ -62,8 +62,12 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         else
         {
             let currentColor = assignColorAndBitmask()
-            let width = Int(arc4random() % 50)
-            let height = Int(arc4random() % 50)
+            var width = Int(arc4random() % 70)
+            var height = Int(arc4random() % 70)
+            
+            width = width <= 10 ? 10 : width
+            height = height <= 10 ? 10 : height
+            
             let location = touch.location(in: self)
             
             let node : SKSpriteNode
