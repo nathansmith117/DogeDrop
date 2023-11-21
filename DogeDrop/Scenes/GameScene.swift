@@ -67,16 +67,23 @@ class GameScene : SKScene, SKPhysicsContactDelegate
             let location = touch.location(in: self)
             
             let node : SKSpriteNode
-            node = SKSpriteNode(color: currentColor, size: CGSize(width: width, height: height))
+            node = SKSpriteNode(texture: SKTexture(imageNamed: getRandomDogeTextureName()), color: currentColor, size: CGSize(width: width, height: height))
             
             node.position = location
             node.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: width, height: height))
             node.physicsBody?.contactTestBitMask = UInt32(colorMask)
-            
-            node.texture = SKTexture(imageNamed: "doge_cute")
+            node.colorBlendFactor = 0.5
             
             addChild(node)
         }
+    }
+    
+    private func getRandomDogeTextureName() -> String
+    {
+        let textures : [String] = ["doge_big", "doge_classic", "doge_coin", "doge_cute"]
+        let texture = textures[Int(arc4random()) % textures.count]
+        
+        return texture
     }
     
     private func assignColorAndBitmask() -> UIColor
